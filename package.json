@@ -1,6 +1,6 @@
 {
-    "name": "nb01",
-    "author": "win",
+    "name": "devtimes",
+    "author": "winuss",
     "version": "0.1.0",
     "scripts": {
         "build": "gatsby build",
