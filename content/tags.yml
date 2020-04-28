@@ -1,0 +1,12 @@
+- name: Demo
+  color: "#007acc"
+  icon: ./assets/images/angular.svg
+  featured: true
+- name: Web
+  color: "#ff8000"
+  icon: ./assets/images/typescript.svg
+  featured: false
+- name: Bigdata
+  color: "#ff8000"
+  icon: ./assets/images/logo.png
+  featured: false
