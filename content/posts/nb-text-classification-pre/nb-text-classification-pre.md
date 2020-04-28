@@ -226,7 +226,7 @@ plt.ylabel('Number of review')
 
 
 
-![png](/assets/img/post/nlp-text-classification/output_18_1.png)
+![png](output_18_1.png)
 
 
 - figsize: (가로, 세로) 형태의 튜플로 입력
@@ -284,7 +284,7 @@ plt.boxplot(train_length, labels=['counts'], showmeans=True)
 
 
 
-![png](/assets/img/post/nlp-text-classification/output_22_1.png)
+![png](output_22_1.png)
 
 
 - labels : 입력한 데이터에 대한 라벨
@@ -313,7 +313,7 @@ plt.axis('off')
 
 
 
-![png](/assets/img/post/nlp-text-classification/output_25_1.png)
+![png](output_25_1.png)
 
 
 워드 클라우드를 통해 살펴보면 가장 많이 사용된 단어는 br로 확인이 된다. br은 HTML 태그 이기때문에 이 태그들을 모두 제거 하는 전처리 작업이 필요하다.
@@ -335,7 +335,7 @@ sns.countplot(train_data['sentiment'])
 
 
 
-![png](/assets/img/post/nlp-text-classification/output_28_1.png)
+![png](output_28_1.png)
 
 
 거의 동일한 개수로 분포되어 있음을 확인할 수 있다. 좀더 정확한 값을 확인해 보자.
@@ -380,7 +380,7 @@ plt.ylabel('Number of reviews', fontsize=15)
 
 
 
-![png](/assets/img/post/nlp-text-classification/output_34_1.png)
+![png](output_34_1.png)
 
 
 대부분의 단어가 1000개 미만의 단어를 가지고 있고, 대부분 200개 정도의 단어를 가지고 있다.
@@ -621,7 +621,7 @@ numpy 배열로 만든 후 라벨의 형태를 확인해 보면 길이가 25,000
 이렇게 라벨까지 numpy 배열로 저장하면 모든 전처리 과정이 끝난다.
 
 원본 데이터를 벡터화하는 과정을 그림을 통해 이해해 보자.
-![oorigin-vector](/assets/img/post/nlp-text-classification/oorigin-vector.png){: width="500px" }
+![oorigin-vector](oorigin-vector.png){: width="500px" }
 
 
 이제 전처리한 데이터를 이후 모델링 과정에서 사용하기 위해 저장을 하도록 하자.
