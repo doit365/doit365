@@ -1,7 +1,3 @@
-- name: Demo
-  color: "#007acc"
-  icon: ./assets/images/angular.svg
-  featured: true
 - name: Web
   color: "#ff8000"
   icon: ./assets/images/typescript.svg
@@ -10,3 +6,7 @@
   color: "#ff8000"
   icon: ./assets/images/logo.png
   featured: false
+- name: Interasting
+  color: "#007acc"
+  icon: ./assets/images/logo.png
+  featured: true
