@@ -4,26 +4,30 @@ module.exports = {
     description: `A Development for %TOPICS%`,
     topics: [`angular`, `bigdata`, 'game'],
     menu: [
+        // {
+        //     name: 'All',
+        //     path: '/archive'
+        // },
         {
-            name: 'All',
-            path: '/archive'
-          },
-          {
             name: 'Web',
             path: '/tag/web'
-          },
-          {
+        },
+        {
             name: 'BigData',
             path: '/tag/bigdata'
-          },
-          {
+        },
+        {
+            name: 'Notebook',
+            path: '/tag/notebook'
+        },
+        {
             name: 'Demo',
             path: '/tag/demo'
-          },
-          {
-            name: 'Example',
+        },
+        {
+            name: 'About',
             path: '/page'
-          },
+        },
     ],
     footerMenu: [
         {
