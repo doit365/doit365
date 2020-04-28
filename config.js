@@ -21,10 +21,6 @@ module.exports = {
             path: '/tag/notebook'
         },
         {
-            name: 'Demo',
-            path: '/tag/demo'
-        },
-        {
             name: 'About',
             path: '/page'
         },

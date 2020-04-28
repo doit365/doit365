@@ -1,19 +1,15 @@
 ---
 title: "Angular 8"
-path: "/web"
-tags: ["Web"]
-featuredImage: "./cover.jpg"
+path: "/angular-8-released"
+tags: ["Web", "Angular"]
+featuredImage: "./cover.png"
 excerpt: Angular 8버전이 출시 되었다. 이번 버젼은 최신 브라우저에서 어플리케이션의 구동 시간을 단축시키고, CLI와 함께 사용할 수 있는 새로운 API를 제공한다.
 created: 2019-07-22
 updated: 2019-07-22
 ---
 
 Angular 8버전이 출시 되었다. 이번 버젼은 최신 브라우저에서 어플리케이션의 구동 시간을 단축시키고, CLI와 함께 사용할 수 있는 새로운 API를 제공한다.
-
 필자는 기존 Angular 6에서 8버전으로 업그레이드를 하였는데, 성능적인 면에서 많이 향상이 된 것을 체감적으로도 느낄 수 있었다.
-
-
-![angular8](angular8.png)
 
 ### Update
 

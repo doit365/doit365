@@ -1,7 +1,7 @@
 ---
 title: "데이터와 알고리즘"
 path: "/ml-data-algorithm"
-tags: ["Bigdata", "ML"]
+tags: ["BigData", "ML"]
 featuredImage: "./cover.png"
 excerpt: 머신러닝은 어떤 데이터로 어떤 학습 알고리즘을 사용할 것인가를 결정하는 작업이라고 할수 있다. 여기서 문제가 될수 있는 나쁜 알고리즘과 나쁜 데이터에 대해 알아보도록 하자.
 created: 2018-02-14

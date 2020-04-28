@@ -2,11 +2,20 @@
   color: "#ff8000"
   icon: ./assets/images/typescript.svg
   featured: false
-- name: Bigdata
+- name: BigData
   color: "#ff8000"
   icon: ./assets/images/logo.png
   featured: false
 - name: Notebook
   color: "#007acc"
   icon: ./assets/images/logo.png
+  featured: false
+
+- name: Angular
+  color: "#e23237"
+  icon: ./assets/images/angular.svg
+  featured: true
+- name: Typescript
+  color: "#e23237"
+  icon: ./assets/images/typescript.svg
   featured: true
