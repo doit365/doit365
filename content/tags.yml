@@ -10,6 +10,10 @@
   color: "#007acc"
   icon: ./assets/images/logo.png
   featured: false
+- name: Tip
+  color: "#007acc"
+  icon: ./assets/images/logo.png
+  featured: false
 
 - name: Angular
   color: "#e23237"
