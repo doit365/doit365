@@ -13,10 +13,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/winuss/gatsby-blog"
+        "url": "https://winuss.github.io"
     },
     "bugs": {
-        "url": "https://github.com/winuss/winuss.github.io/issues"
+        "url": "https://winuss.github.io/issues"
     },
     "license": "MIT",
     "keywords": [
