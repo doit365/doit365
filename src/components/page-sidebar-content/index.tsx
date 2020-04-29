@@ -59,7 +59,7 @@ const PageSidebarContent: FunctionComponent = () => {
         {posts.map((post, index) => (
           <Card
             title={post.frontmatter.title}
-            featuredImage={post.frontmatter.featuredImage.childImageSharp}
+            featuredImage={post.frontmatter.featuredImage ? post.frontmatter.featuredImage.childImageSharp : null}
             path={post.frontmatter.path}
             key={index}
             compact={true}
