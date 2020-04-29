@@ -42,7 +42,7 @@ module.exports = {
     search: true,
     author: {
         name: `winuss`,
-        description: `I'm <strong>yoo seongsu</strong>, every end is a new beginning.
+        description: `Every end is a <strong>new beginning</strong>.
             <a href="https://devtimes.com" rel="noopener" target="_blank">devtimes.com</a>`,
         social: {
             facebook: ``,

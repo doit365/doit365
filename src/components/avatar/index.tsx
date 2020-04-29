@@ -9,7 +9,7 @@ interface AvatarProps {
 }
 
 const StyledAvatar = styled(Img)<AvatarProps>`
-  max-width: 65px;
+  max-width: 70px;
   border-radius: 100%;
 `;
 
@@ -21,7 +21,7 @@ const Avatar: FunctionComponent<AvatarProps> = ({alt, style}) => {
     query {
       file(sourceInstanceName: {eq: "themeAssets"}, name: {eq: "blogger"}) {
         childImageSharp {
-          fixed(width: 65, height: 65) {
+          fixed(width: 70, height: 70) {
             ...GatsbyImageSharpFixed
           }
         }
