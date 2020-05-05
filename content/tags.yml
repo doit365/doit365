@@ -3,7 +3,7 @@
   icon: ./assets/images/typescript.svg
   featured: false
 - name: BigData
-  color: "#ff8000"
+  color: "#aae70a"
   icon: ./assets/images/logo.png
   featured: false
 - name: Notebook
@@ -11,15 +11,15 @@
   icon: ./assets/images/logo.png
   featured: false
 - name: Tip
-  color: "#007acc"
+  color: "#af91ff"
   icon: ./assets/images/logo.png
   featured: false
 
 - name: Angular
-  color: "#e23237"
+  color: "#f83434"
   icon: ./assets/images/angular.svg
   featured: true
 - name: Typescript
-  color: "#e23237"
+  color: "#3964c6"
   icon: ./assets/images/typescript.svg
   featured: true
