@@ -90,7 +90,11 @@ const PostContent = styled.div`
   }
 
   code[class*="language-text"] {
-    padding: 5px;
+    padding: 2px;
+    font-size: 0.9em;
+    font-weight: 500;
+    background-color: #6f7895;
+    font-family: ${Theme.fonts.base};
   }
 
   p > img {
