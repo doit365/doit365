@@ -93,7 +93,7 @@ const PostContent = styled.div`
     padding: 2px;
     font-size: 0.9em;
     font-weight: 500;
-    background-color: #6f7895;
+    background-color: #1ca8da;
     font-family: ${Theme.fonts.base};
   }
 

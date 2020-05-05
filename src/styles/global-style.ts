@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
   .gatsby-highlight {
     max-width: 100% !important;
+    font-size: 0.85em;
   }
 
   .gatsby-highlight-code-line {
