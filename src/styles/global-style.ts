@@ -49,6 +49,9 @@ const GlobalStyle = createGlobalStyle`
 
   div[data-language='text'].gatsby-highlight {
     background-color: #f0f0f0;
+    border-bottom: 0.1em dashed #c6c6c8;
+    border-top: 0.1em dashed #c6c6c8;
+    margin-top: 6px;
   }
 
   .gatsby-highlight pre.language-text code.language-text {
