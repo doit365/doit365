@@ -32,6 +32,7 @@ const LeftSidebar = styled.div<{ show?: boolean }>`
   min-width: 255px;
   max-width: 225px;
   transition: opacity .5s, z-index .5s;
+  font-size: 0.9em;
 
   @media (max-width: ${Theme.breakpoints.xl}) {
     position: fixed;
@@ -92,8 +93,6 @@ const PostContent = styled.div`
   code[class*="language-text"] {
     padding: 2px;
     font-size: 0.9em;
-    font-weight: 500;
-    background-color: #1ca8da;
     font-family: ${Theme.fonts.base};
   }
 
