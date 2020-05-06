@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import Theme from "./theme";
 import styledNormalize from "styled-normalize";
 import * as prismStyle from "prismjs/themes/prism-okaidia.css";
@@ -31,10 +31,31 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .gatsby-highlight {
-    max-width: 100% !important;
+    // max-width: 100% !important;
     font-size: 0.85em;
-  }
+    // font-weight: 500;
+    background-color: #282a36;
 
+    border-radius: 0em;
+    padding: 1em 2.8em;
+    overflow: auto;
+
+    // width: 100%;
+    // border-left: 0.4em solid #000000;
+
+    margin-left: -40px;
+    width: calc(100% + 80px);
+  }
+  
+  .gatsby-highlight pre[class*='language-'] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+  }
+  
   .gatsby-highlight-code-line {
     background-color: #353631;
     display: block;

@@ -96,6 +96,13 @@ const PostContent = styled.div`
     font-family: ${Theme.fonts.base};
   }
 
+  p > .language-text {
+    //   background-color: #1ca8da; 
+    background-color: #f9f2f4;
+    font-weight: 600;
+    color: #c7254e;
+  }
+
   p > img {
     max-width: 100%;
     border-radius: .3em;
