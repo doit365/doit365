@@ -98,7 +98,7 @@ const PostContent = styled.div`
 
   p > .language-text {
     //   background-color: #1ca8da; 
-    background-color: #f9f2f4;
+    background-color: #f2e6e9;
     font-weight: 600;
     color: #c7254e;
   }

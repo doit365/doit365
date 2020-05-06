@@ -46,6 +46,15 @@ const GlobalStyle = createGlobalStyle`
     margin-left: -40px;
     width: calc(100% + 80px);
   }
+
+  div[data-language='text'].gatsby-highlight {
+    background-color: #e0e1e9;
+  }
+
+  .gatsby-highlight pre.language-text code.language-text {
+    color: #000;
+    text-shadow: none;
+  }
   
   .gatsby-highlight pre[class*='language-'] {
     background-color: transparent;
