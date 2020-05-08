@@ -36,21 +36,25 @@ const GlobalStyle = createGlobalStyle`
     // font-weight: 500;
     background-color: #282a36;
 
-    border-radius: 0em;
-    padding: 1em 2.8em;
+    border-radius: 0.2em;
+    padding: 1em 1.4em;
     overflow: auto;
 
     // width: 100%;
     // border-left: 0.4em solid #000000;
 
-    margin-left: -40px;
-    width: calc(100% + 80px);
+    margin-left: -1.4em;
+    width: calc(100% + 1.4em + 1.4em);
+    border: 0.1em solid #c6c6c8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   }
 
   div[data-language='text'].gatsby-highlight {
     background-color: #f0f0f0;
-    border-bottom: 0.1em dashed #c6c6c8;
-    border-top: 0.1em dashed #c6c6c8;
+    // border-bottom: 0.1em dashed #c6c6c8;
+    // border-top: 0.1em dashed #c6c6c8;
+    border: 0.1em solid #c6c6c8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     margin-top: 6px;
   }
 
