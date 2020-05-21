@@ -46,16 +46,18 @@ const GlobalStyle = createGlobalStyle`
     margin-left: -1.4em;
     width: calc(100% + 1.4em + 1.4em);
     border: 0.1em solid #c6c6c8;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 6px;
   }
 
   div[data-language='text'].gatsby-highlight {
     background-color: #f0f0f0;
     // border-bottom: 0.1em dashed #c6c6c8;
     // border-top: 0.1em dashed #c6c6c8;
-    border: 0.1em solid #c6c6c8;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    margin-top: 6px;
+    border: 0.03em solid #c6c6c8;
+    //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    //margin-top: 6px;
+    
   }
 
   .gatsby-highlight pre.language-text code.language-text {
