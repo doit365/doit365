@@ -13,7 +13,7 @@ updated: 2019-07-21
 
 ### 데이터 플로우 그래프(Data flow graph)
 
-![mnist](data-flow-graph.gif)
+![mnist](data-flow-graph-01.png)
 
 수학 계산과 데이터의 흐름을 노드(Node)와 엣지(Edge)를 사용한 양방향 그래프(Directed Graph)로 표현한다.
 
