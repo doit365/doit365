@@ -106,6 +106,17 @@ $ conda list  // 패키지 리스트
 $ conda remove --name mytest(가상환경명) tensorflow(패키지명) // 패키지 제거
 ~~~
 
+**주피터 설치**
+
+`mytest`라는 가상환경을 활성화 하고 jupyter를 설치해보자.
+
+~~~bash
+$ conda activate mytest             //가상환경 활성화
+$ (mytest) conda install jupyter    // 패키지 설치
+$ (mytest) conda install nb_conda   // 주피터 상에서 패키지 설치및 환경 정보를 쉽게 확인
+$ (mytest) jupyter notebook         // 주피터 실행
+~~~
+
 **주피터 확장기능 설치**
 
 주피터 확장기능을 사용하면 좀더 편리한 기능들을 사용할 수 있다.
