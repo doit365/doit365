@@ -1,7 +1,7 @@
 ---
 title: This is what i do
 path: "/page"
-excerpt: A sample page.
+excerpt: about me page.
 ---
 
 ## Development
