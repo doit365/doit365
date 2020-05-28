@@ -1,7 +1,7 @@
 ---
 title: "NLP - 한국어 영화 리뷰 감정분석"
 path: "/nlp-korea-movie-review"
-tags: ["BigData", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
 excerpt: 네이버 영화 리뷰 데이터를 이용한 긍정/부정 예측하기
 created: 2020-05-24

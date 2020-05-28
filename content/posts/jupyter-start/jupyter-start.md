@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebook 설치 및 셋팅"
 path: "/jupyter-start"
-tags: ["BigData"]
+tags: ["Python"]
 featuredImage: "./cover.png"
 excerpt: 머신러닝 관련 코드를 작성해보기 위해 환경을 세팅해보자. 다른 방법들도 많겠지만 가장 많이 쓰는 주피터 노트북을 설치하고 파이썬 패키지를 어떻게 관리할 것인지를 살펴보도록 하자.
 created: 2019-02-14

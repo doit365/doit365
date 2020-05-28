@@ -1,7 +1,7 @@
 ---
 title: "NLP - 텍스트 분류 (TF-IDF) - #2"
 path: "/nb-text-classification-tf-idf"
-tags: ["Notebook", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
 excerpt: 이제 전처리된 데이터를 가지고 TF-IDF를 활용한 모델을 구현할 것이다.
 created: 2019-07-02

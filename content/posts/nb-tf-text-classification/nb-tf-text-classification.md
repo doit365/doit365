@@ -1,7 +1,7 @@
 ---
 title: "TF - 텍스트 분류"
 path: "/nb-tf-text-classification"
-tags: ["Notebook", "BigData", "Tensorflow", "자연어처리"]
+tags: ["ML-DL", "Tensorflow", "자연어처리"]
 featuredImage: "./cover.png"
 excerpt: TF-IDF 및 Word2Vec을 이용해 텍스트를 분류해 보았다. 이번에는 텐서플로를 이용하여 텍스트를 분류 해보자.
 created: 2019-08-07

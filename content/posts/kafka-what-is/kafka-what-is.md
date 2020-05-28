@@ -1,7 +1,7 @@
 ---
 title: "카프카(Kafka)의 이해"
 path: "/what-is-kafka"
-tags: ["BigData", "Kafka", "ELK"]
+tags: ["DataLake", "Kafka", "ELK"]
 featuredImage: "./cover.png"
 excerpt: 대용량 게임로그 수집을 위해 Elastic Stack을 도입하게 되었는데, 중간에 버퍼역할(메시지큐)을 하는 Kafka에 대서 알아보려고 한다.
 created: 2019-01-18

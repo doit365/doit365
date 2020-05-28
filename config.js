@@ -2,7 +2,7 @@ module.exports = {
     title: `DevTimes`,
     siteUrl: `https://devtimes.com`,
     description: `A Development for %TOPICS%`,
-    topics: [`angular`, `bigdata`, 'game'],
+    topics: [`angular`, 'python', `machine learning`, `deep learning`, 'game'],
     menu: [
         // {
         //     name: 'All',
@@ -13,12 +13,16 @@ module.exports = {
             path: '/tag/web'
         },
         {
-            name: 'BigData',
-            path: '/tag/bigdata'
+            name: 'ML-DL',
+            path: '/tag/ml-dl'
         },
         {
-            name: 'Notebook',
-            path: '/tag/notebook'
+            name: 'DataLake',
+            path: '/tag/datalake'
+        },
+        {
+            name: 'Statistics',
+            path: '/tag/statistics'
         },
         {
             name: 'Tips',

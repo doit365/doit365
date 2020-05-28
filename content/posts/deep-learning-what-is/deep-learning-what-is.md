@@ -1,7 +1,7 @@
 ---
 title: "딥러닝 - 딥러닝의 이해"
 path: "/deep-learning-what-is"
-tags: ["BigData", "DeepLearning"]
+tags: ["ML-DL", "DeepLearning"]
 featuredImage: "./cover.png"
 excerpt: 딥러닝이라는 용어는 2006년 캐나다 토론토 대학교의 제프리 힌튼(Geoffrey Hinton) 교수의 논문을 통해 처음 사용이 되었다. 하지만 딥러닝은 사실 새로운 개념이 아니다.
 created: 2019-05-16

@@ -1,7 +1,7 @@
 ---
 title: "TF - 텐서플로우 소개 및 맛보기"
 path: "/nb-tf-basic"
-tags: ["Notebook", "BigData", "Tensorflow", "자연어처리"]
+tags: ["ML-DL", "Tensorflow", "자연어처리"]
 featuredImage: "./cover.png"
 excerpt: 텐서플로우(TensorFlow)는 데이터 플로우 그래프(Data flow graph)를 사용하여 수치 연산을 하는 오픈소스 소프트웨어 라이브러리이다.
 created: 2019-07-21

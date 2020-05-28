@@ -1,7 +1,7 @@
 ---
 title: "ML - 머신러닝?!"
 path: "/ml-what-is"
-tags: ["BigData", "ML"]
+tags: ["ML-DL", "ML"]
 featuredImage: "./cover.png"
 excerpt: 인공지능, 머신러닝, 딥러닝에 대해 자세히는 모르지만 대부분 한번쯤을 들어보았을 것이다. 분명 3가지는 차이가 있으며 어떤 차이가 있는지부터 알아보자.
 created: 2019-01-30

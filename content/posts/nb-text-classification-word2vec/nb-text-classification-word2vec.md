@@ -1,7 +1,7 @@
 ---
 title: "NLP - 텍스트 분류 (Word2Vec) - #3"
 path: "/nb-text-classification-word2vec"
-tags: ["Notebook", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
 excerpt: 이번에는 word2vec을 활용하여 모델을 구현 해보자.
 created: 2019-07-19

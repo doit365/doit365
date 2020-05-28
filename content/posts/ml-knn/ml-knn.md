@@ -1,7 +1,7 @@
 ---
 title: "K-최근접 이웃법 (Nearest Neighbor)"
 path: "/ml-knn"
-tags: ["BigData", "ML", "KNN"]
+tags: ["ML-DL", "ML", "KNN"]
 featuredImage: "./cover.png"
 excerpt: 최근접 이웃법은 새로운 데이터를 입력받았을 때 가장 가까이 있는 것이 무엇이냐를 중심으로 새로운 데이터의 종류를 정해주는 알고리즘이다.
 created: 2018-02-14

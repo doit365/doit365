@@ -1,7 +1,7 @@
 ---
 title: "NLP - Bag of words, n-gram"
 path: "/nlp-basic"
-tags: ["BigData", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
 excerpt: 자연어 처리(natural language processing)는 인간의 언어 현상을 기계적으로 분석해서 컴퓨터가 이해할 수 있는 형태로 만드는 자연 언어 이해 혹은 그러한 형태를 다시 인간이 이해할 수 있는 언어로 표현하는 제반 기술을 의미한다. 
 created: 2019-03-07

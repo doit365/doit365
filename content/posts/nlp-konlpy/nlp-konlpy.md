@@ -1,9 +1,9 @@
 ---
 title: "NLP - 자연어처리 - KoNLPy (코엔엘파이)"
 path: "/nlp-konlpy"
-tags: ["BigData", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
-excerpt: 한글에도 NLTK나 Spacy 같은 도구를 사용할 수 있으면 좋겠지만 언어 특성상 영어를 위한 도구를 사용하기에는 적합하지 않다. 하지만 많은 사람들의 노력으로 개발된 한글 자연어 처리를 돕는 훌륭한 도구를 사용할 수있다. 그중 한글 자연어 처리에 많이 사용하는 파이썬 라이브버리 KoNLPy에 대해 알아보겠다.의미한다. 
+excerpt: 한글 자연어 처리에 많이 사용하는 파이썬 라이브버리 KoNLPy에 대해 알아보겠다.
 created: 2019-04-18
 updated: 2019-04-18
 ---

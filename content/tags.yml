@@ -1,17 +1,21 @@
 - name: Web
   color: "#ff8000"
-  icon: ./assets/images/typescript.svg
-  featured: false
-- name: BigData
-  color: "#aae70a"
   icon: ./assets/images/logo.png
   featured: false
-- name: Notebook
+- name: ML-DL
+  color: "#4bc822"
+  icon: ./assets/images/logo.png
+  featured: false
+- name: DataLake
+  color: "#b798f5"
+  icon: ./assets/images/logo.png
+  featured: false
+- name: Statistics
   color: "#007acc"
   icon: ./assets/images/logo.png
   featured: false
 - name: Tip
-  color: "#af91ff"
+  color: "#358877"
   icon: ./assets/images/logo.png
   featured: false
 

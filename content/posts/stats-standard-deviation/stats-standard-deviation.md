@@ -1,7 +1,7 @@
 ---
 title: "통계 - 표준편차"
 path: "/stats-standard-deviation"
-tags: ["BigData", "ML"]
+tags: ["Statistics", "ML"]
 featuredImage: "./cover.png"
 excerpt: 쉽게 말하면 평균(Mean)에 대한 오차이다. 즉, 실제 데이터 값이 평균을 기준으로 할때 얼마나 들쭉 날쭉하냐를 나타내는 것이다. 평균이 m이고 표준편차가 3이라고 할때, 실제 값은 m+`3 값이라는 것이다
 created: 2019-02-22

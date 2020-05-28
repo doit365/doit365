@@ -1,7 +1,7 @@
 ---
 title: "카프카(Kafka) 설치 및 클러스터 구성"
 path: "/kafka-cluster"
-tags: ["BigData", "Kafka", "ELK"]
+tags: ["DataLake", "Kafka", "ELK"]
 featuredImage: "./cover.png"
 excerpt: Kafka를 설치하고 간단하게 클러스터 환경을 구성하여 Producer 및 Consumer 테스트를 해보자.
 created: 2019-01-25

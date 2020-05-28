@@ -1,7 +1,7 @@
 ---
 title: "NLP - 텍스트 분류 (전처리) - #1"
 path: "/nb-text-classification-pre"
-tags: ["Notebook", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
 excerpt: 케글 데이터 불러오기 -> EDA -> 데이터정제 -> 모델링의미한다. 
 created: 2019-06-25

@@ -1,7 +1,7 @@
 ---
 title: "NLP - 데이터 정제"
 path: "/nlp-preprocessing"
-tags: ["BigData", "ML", "NLP"]
+tags: ["ML-DL", "ML", "NLP"]
 featuredImage: "./cover.png"
 excerpt: 기계가 텍스트를 이해할 수 있도록 텍스트를 정제하고 신호와 소음을 구분하여 아웃라이어 데이터로 인한 오버피팅을 방지하기 위해서는 다음과 같은 처리를 해주어야 한다.
 created: 2019-03-20
