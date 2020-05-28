@@ -54,7 +54,7 @@ module.exports = {
             <a href="https://devtimes.com" rel="noopener" target="_blank">devtimes.com</a>`,
         social: {
             facebook: ``,
-            twitter: `https://twitter.com/winuss`,
+            twitter: ``,
             linkedin: ``,
             instagram: ``,
             youtube: ``,
