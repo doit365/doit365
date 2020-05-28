@@ -14,7 +14,8 @@ const StyledNav = styled.nav`
   .toc-list {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
+    border-left: 2px solid #20232a;
 
     .toc-list {
       padding-left: 17px;
