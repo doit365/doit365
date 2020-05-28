@@ -2,6 +2,10 @@
   color: "#ff8000"
   icon: ./assets/images/logo.png
   featured: false
+- name: Python
+  color: "#445788"
+  icon: ./assets/images/logo.png
+  featured: false
 - name: ML-DL
   color: "#4bc822"
   icon: ./assets/images/logo.png

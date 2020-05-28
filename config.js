@@ -13,6 +13,10 @@ module.exports = {
             path: '/tag/web'
         },
         {
+            name: 'Python',
+            path: '/tag/python'
+        },
+        {
             name: 'ML-DL',
             path: '/tag/ml-dl'
         },
