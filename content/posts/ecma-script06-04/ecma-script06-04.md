@@ -8,13 +8,13 @@ created: 2018-06-17
 updated: 2018-06-17
 ---
 
-## Spread Operator!의 기본 
+### Spread Operator!의 기본 
 
 **전개 연산자 or 펼침 연산자** 많이 쓰게 될 연산자이다.
 
 >전개 연산자(spread operator)는 표현식(expression)은 2개 이상의 인수arguments(함수 호출 용)나 2개 이상의 요소elements(배열 리터럴 용) 또는 2개 이상의 변수(비구조화 할당 용)가 예상되는 곳에 확장될 수 있도록 한다.
 
-**1.함수에 인자로 전달**
+### 함수에 인자로 전달
 ~~~javascript
 //배열을 요소 하나씩 받아야하는 함수가 있다.
 function printLog(x, y, z) {
@@ -39,9 +39,7 @@ Math.min(...numbers);
 ~~~
 > `...`을 통해서 apply없이 함수를 호출할 수 있다!
 
-## Array 팁
-
-**2.배열 붙이기**
+### 배열 붙이기
 
 ~~~javascript
 let beer = ['시원한 맥주', '마시러'];
@@ -55,7 +53,7 @@ arr1.unshift(...arr2);
 >그냥 `...`으로 배열을 껍데기를 깐다고 생각하면 쉽다.
 
 
-**3.배열 복사하기**
+### 배열 복사하기
 
 ~~~javascript
 let arr1 = [1,2,3];
@@ -76,7 +74,7 @@ arr3.unshift("3번");
 <br><br>
 
 
-**4.NodeList를 배열로 변환**
+### NodeList를 배열로 변환
 
 ~~~javascript
 let nodeList = document.querySelectorAll("li");
