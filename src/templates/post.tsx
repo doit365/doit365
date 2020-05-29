@@ -99,8 +99,10 @@ const PostContent = styled.div`
   p > .language-text {
     //   background-color: #1ca8da; 
     background-color: #f2e6e9;
+    padding: 0 4px 2px 4px;
     font-weight: 600;
     color: #c7254e;
+    text-align: center;
   }
 
   p > img {
