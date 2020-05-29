@@ -48,8 +48,8 @@ export const FeaturedImage = styled(Img)<Pick<CardProps, 'halfImage'>>`
       height: 190px;
     }
   ` : `
-    height: 190px;
-    max-height: 190px;
+    height: 140px;
+    max-height: 140px;
     width: 100%;
     border-top-right-radius: 3px;
   `};
