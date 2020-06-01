@@ -13,6 +13,8 @@ const manifest = {
     // icon: `${__dirname}/assets/image/blog_uss.png`
 };
 
+const google_analytics_trackingId = "UA-133448300-1";
+
 module.exports = {
     siteMetadata: config,
 
@@ -26,6 +28,12 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: manifest
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: google_analytics_trackingId,
+            }
         },
         {
             resolve: `gatsby-source-filesystem`,
