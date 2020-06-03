@@ -285,6 +285,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({data, location}) =>
             <FeaturedImage sizes={post.frontmatter.featuredImage.childImageSharp.sizes}/>
             }
             <StyledPost dangerouslySetInnerHTML={{__html: post.html}} className={`post`}/>
+            <Comments repo="winuss/blog_comments"/>
             <PostFooter>
               <p>
                 Published under&nbsp;
@@ -314,7 +315,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({data, location}) =>
           </BioWrapper>
         </PostAdditionContent>
       </PostAddition>
-      <Comments/>
+      {/* <Comments repo="winuss/blog_comments"/> */}
     </Layout>
   );
 };
