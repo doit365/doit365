@@ -15,13 +15,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${Theme.fonts.base};
     line-height: 1.9em;
-    
-    text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
-    -webkit-text-size-adjust: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
   }
 
   * {
