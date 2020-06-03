@@ -97,7 +97,15 @@ module.exports = {
                             showLineNumbers: false,
                             noInlineHighlight: false,
                         }
-                    }
+                    },
+                    {
+                        resolve: `@pauliescanlon/gatsby-remark-sticky-table`,
+                        // options: {
+                        //     height: 250,
+                        //     backgroundColor: "#ffffff",
+                        // },
+                    },
+                    
                 ]
             }
         },

@@ -82,6 +82,37 @@ const GlobalStyle = createGlobalStyle`
     padding-right: 1em;
     padding-left: 0.75em;
   }
+
+  .remark-sticky-table {
+    border-radius: 2px;
+    // box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    margin: 32px 0px;
+  }
+  
+  .remark-sticky-table-table {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border: 1px solid #bcbcbc; 
+    // width: 100%;
+    width: auto;
+  }
+  
+  .remark-sticky-table-th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    text-align: left;
+    // border: 1px solid #bcbcbc; 
+    border-bottom: 1px solid #b8bcc9; 
+  }
+  
+  .remark-sticky-table-tbody:nth-child(odd) {
+    background-color: #fafafa;
+  }
+  
+  .remark-sticky-table-th,
+  .remark-sticky-table-td {
+    padding: 4px 12px;
+  }
 `;
 
 export default GlobalStyle;
