@@ -13,7 +13,7 @@ const manifest = {
     // icon: `${__dirname}/assets/image/blog_uss.png`
 };
 
-const google_analytics_trackingId = "UA-133448300-1";
+const google_analytics_trackingId = "UA-168375315-1";
 
 module.exports = {
     siteMetadata: config,
