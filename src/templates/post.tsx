@@ -285,6 +285,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({data, location}) =>
             <FeaturedImage sizes={post.frontmatter.featuredImage.childImageSharp.sizes}/>
             }
             <StyledPost dangerouslySetInnerHTML={{__html: post.html}} className={`post`}/>
+            <hr/>
             <Comments repo="winuss/blog_comments"/>
             <PostFooter>
               <p>
