@@ -1,5 +1,5 @@
 module.exports = {
-    title: `DevTimes`,
+    title: `슬기로운 개발 생활`,
     siteUrl: `https://devtimes.com`,
     description: `A Development for %TOPICS%`,
     topics: [`angular`, 'python', `machine learning`, `deep learning`, 'game'],
