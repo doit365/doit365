@@ -114,6 +114,32 @@ const GlobalStyle = createGlobalStyle`
   .remark-sticky-table-td {
     padding: 4px 12px;
   }
+
+
+  table.dataframe  {
+    border-collapse: collapse;
+    font-size: 0.75em;
+    margin-bottom: 8px;
+  }
+  
+  .dataframe td, .dataframe th {
+    border: 1px solid #bcbcbc;
+    padding: 0px 12px;
+  }
+
+  .dataframe tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+  
+  .dataframe tr:hover {
+    background-color: #d6d9e0;
+  }
+
+  .dataframe th {
+    background-color: #f7f7f7;
+    // color: white;
+    padding 0px 12px;
+  }
 `;
 
 export default GlobalStyle;
