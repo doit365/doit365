@@ -120,6 +120,8 @@ const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     font-size: 0.75em;
     margin-bottom: 8px;
+    margin-right: -1.5em;
+    margin-left: -1.5em;
   }
   
   .dataframe td, .dataframe th {
