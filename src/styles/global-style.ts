@@ -60,7 +60,8 @@ const GlobalStyle = createGlobalStyle`
     //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     //margin-top: 6px;
     margin-left: 2px;
-    width: calc(100% - 2px);
+    margin-right: 2px;
+    width: calc(100% - 4px);
   }
 
   .gatsby-highlight pre.language-text code.language-text {
@@ -123,11 +124,14 @@ const GlobalStyle = createGlobalStyle`
     font-size: 0.75em;
     margin-bottom: 8px;
     margin-left: 2px;
-    // width: calc(100% - 2px);
+    margin-right: 2px;
+    // width: calc(100% - 4px);
 
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    border: 1px solid transparent;
+    background-color: #f0f0f0;
   }
   
   .dataframe td, .dataframe th {
