@@ -44,8 +44,9 @@ const GlobalStyle = createGlobalStyle`
     // width: 100%;
     // border-left: 0.4em solid #000000;
 
-    margin-left: -1.4em;
-    width: calc(100% + 1.4em + 1.4em);
+    // margin-left: -1.4em;
+    // width: calc(100% + 1.4em + 1.4em);
+    width: 100%;
     border: 0.1em solid #c6c6c8;
     //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 6px;
@@ -58,7 +59,8 @@ const GlobalStyle = createGlobalStyle`
     border: 0.03em solid #c6c6c8;
     //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     //margin-top: 6px;
-    
+    margin-left: 2px;
+    width: calc(100% - 2px);
   }
 
   .gatsby-highlight pre.language-text code.language-text {
@@ -120,8 +122,12 @@ const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     font-size: 0.75em;
     margin-bottom: 8px;
-    margin-right: -1.5em;
-    margin-left: -1.5em;
+    margin-left: 2px;
+    // width: calc(100% - 2px);
+
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   
   .dataframe td, .dataframe th {
