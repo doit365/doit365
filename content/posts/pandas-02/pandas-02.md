@@ -4,8 +4,8 @@ path: "/pandas-02"
 tags: ["Python"]
 featuredImage: "./cover.png"
 excerpt: Pandas는 데이터 파일을 읽어 데이터프레임으로 만들 수 있다. 다음처럼 여러 포맷을 지원한다.
-created: 2020-10-01
-updated: 2020-10-01
+created: 2020-09-27
+updated: 2020-09-27
 ---
 
 ### 데이터 입출력

@@ -4,8 +4,8 @@ path: "/pandas-01"
 tags: ["Python"]
 featuredImage: "./cover.png"
 excerpt: Pandas 패키지는 데이터 분석을 할 때 가장 많이 쓰이는 패키지이다. 대부분의 데이터는 시계열(series)이나 표(table)의 형태로 나타낼 수 있는데 Pandas에서는 이러한 표 데이터를 다루기 위한 시리즈(Series) 클래스와 데이터프레임(DataFrame) 클래스를 제공한다.
-created: 2020-10-01
-updated: 2020-10-01
+created: 2020-09-26
+updated: 2020-09-26
 ---
 
 ### Pandas 패키지 소개
