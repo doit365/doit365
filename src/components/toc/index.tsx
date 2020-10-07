@@ -35,11 +35,18 @@ const StyledNav = styled.nav`
   .toc-link {
     color: #808080;
     text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 550; 
   }
 
   .is-active-link {
-    color: #404040;
-    font-weight: 700;
+    color: #099bcc;
+    // font-weight: 800;
+    // border: 1px solid #bcbcbc; 
+    // border-radius: 6px;
+    // padding: 0 2px;
+    // padding: 0 10px 0 0;
+    // background-color: yellow;
   }
 `;
 
