@@ -14,8 +14,9 @@ const StyledNav = styled.nav`
   .toc-list {
     list-style-type: none;
     margin: 0;
-    padding: 0 0 0 10px;
-    border-left: 2px solid #20232a;
+    // padding: 0 0 0 10px;
+    padding: 0 0 0 0;
+    border-left: 2px solid #848da2;
 
     .toc-list {
       padding-left: 17px;
@@ -37,9 +38,13 @@ const StyledNav = styled.nav`
     text-decoration: none;
     font-size: 0.9em;
     font-weight: 550; 
+    padding-left: 10px;
   }
 
   .is-active-link {
+    margin-left: -3px;
+    padding-left: 9px;
+    border-left: 4px solid #13acee; 
     color: #099bcc;
     // font-weight: 800;
     // border: 1px solid #bcbcbc; 
