@@ -861,7 +861,4 @@ df
     14.8 µs ± 262 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
     
 
-
-```python
-
-```
+출처 : 데이터사이언스 스쿨(datascienceschool.net)

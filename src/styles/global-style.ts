@@ -4,8 +4,8 @@ import styledNormalize from "styled-normalize";
 // import * as prismStyle from "prismjs/themes/prism-okaidia.css";
 const prismStyle = require('prismjs/themes/prism-okaidia.css');
 
+// ${styledNormalize}
 const GlobalStyle = createGlobalStyle`
-  ${styledNormalize}
   ${prismStyle}
 
   html {
