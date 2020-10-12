@@ -126,12 +126,17 @@ const GlobalStyle = createGlobalStyle`
     margin-left: 2px;
     margin-right: 2px;
     // width: calc(100% - 4px);
+    line-height: 2em;
 
     display: block;
     overflow-x: auto;
     white-space: nowrap;
     border: 1px solid transparent;
-    background-color: #f0f0f0;
+    // background-color: #f0f0f0;
+
+    > tbody {
+      text-align: right;
+    }
   }
   
   .dataframe td, .dataframe th {
@@ -150,7 +155,7 @@ const GlobalStyle = createGlobalStyle`
   .dataframe th {
     background-color: #f7f7f7;
     // color: white;
-    padding 0px 12px;
+    padding: 0px 12px;
   }
 `;
 
