@@ -98,8 +98,9 @@ const PostsPage: FunctionComponent<PostsPageProps> = ({ pathContext, location })
                   tag: post.frontmatter.tags.length > 0 ? post.frontmatter.tags[0] : null,
                 }
               }
-              style={{gridArea: index === 0 ? 'latest' : undefined}}
-              halfImage={index === 0}
+              // 첫번째 게시물 단독으로 출력..
+              // style={{gridArea: index === 0 ? 'latest' : undefined}}
+              // halfImage={index === 0}
             />
           ))}
           <ArchiveLinkWrapper>
