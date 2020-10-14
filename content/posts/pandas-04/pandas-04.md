@@ -16,7 +16,6 @@ Pandas는 Numpy의 2차원 배열에서 가능한 대부분의 데이터 처리�
 
 가장 간단한 데이터 분석은 데이터의 갯수를 세는 것이나. `count` 메서드를 사용하는데, 주의할 점은 NaN값은 세지 않는다는 것이다.
 
-
 ```python
 import pandas as pd 
 import numpy as np
