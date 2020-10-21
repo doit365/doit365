@@ -18,7 +18,7 @@ exports.onPreBootstrap = ({ store }) => {
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const postsPerPage = 5;
+  const postsPerPage = 6;
 
   const result = await graphql(`
     query {
