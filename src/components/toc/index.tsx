@@ -42,8 +42,8 @@ const StyledNav = styled.nav`
   }
 
   .is-active-link {
-    margin-left: -3px;
-    padding-left: 9px;
+    margin-left: -1px;
+    padding-left: 7px;
     border-left: 4px solid #13acee; 
     color: #099bcc;
     // font-weight: 800;
