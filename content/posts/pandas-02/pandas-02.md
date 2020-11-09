@@ -8,7 +8,7 @@ created: 2020-09-27
 updated: 2020-09-27
 ---
 
-### 데이터 입출력
+## 데이터 입출력
 
 Pandas는 데이터 파일을 읽어 데이터프레임으로 만들 수 있다. 다음처럼 여러 포맷을 지원한다.
 
@@ -23,7 +23,7 @@ Pandas는 데이터 파일을 읽어 데이터프레임으로 만들 수 있다.
 
 이중에서 가장 단순하지만 널리 사용되는 CSV(Comma Separated Values) 포맷 입출력에 대해 살펴보자.
 
-### %%writefile 명령
+## %%writefile 명령
 
 샘플 데이터로 사용할 CSV 파일을 %%writefile 매직 명령으로 만들어보자.
 
@@ -44,7 +44,7 @@ c1, c2, c3
     Overwriting sample1.csv
     
 
-### CSV 파일 입력
+## CSV 파일 입력
 
 
 ```python
@@ -454,7 +454,7 @@ df
 - na_values : 특정값을 NaN값으로 대체 (,na_values=[['누락']])
 
 
-### CSV 파일 출력
+## CSV 파일 출력
 
 
 ```python

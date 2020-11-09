@@ -8,11 +8,9 @@ created: 2020-10-09
 updated: 2020-10-09
 ---
 
-### DataFrame 합성
-
 Pandas는 두 개 이상의 DataFrame을 하나로 합치는 데이터 병합(merge)이나 연결(concatenate)을 지원한다.
 
-### `merge` 함수를 사용한 DataFrame 병합
+## `merge` 함수를 사용한 DataFrame 병합
 
 `merge` 함수는 두 데이터프레임의 공통 열 혹은 인덱스를 기준으로 두 개의 테이블을 합친다. 이 때 기준이 되는 열, 행의 데이터를 키(Key)라고 한다.
 
@@ -1477,7 +1475,7 @@ pd.merge(df1, df2, how='outer', left_index=True, right_index=True)
 
 
 
-### join 매서드
+## join 매서드
 
 `merge` 명령어 대신 `join` 매서드를 사용할 수도 있다.
 
@@ -1555,7 +1553,7 @@ df1.join(df2, how='outer')
 
 
 
-### `concat` 함수를 사용한 데이터 연결
+## `concat` 함수를 사용한 데이터 연결
 
 `concat` 함수를 사용하면 기준 열(key column)을 사용하지 않고 단순히 데이터를 연결(concatenate)한다.
 

@@ -7,7 +7,8 @@ excerpt: 피봇테이블(pivot table)이란 데이터 열 중에서 두개의 �
 created: 2020-10-18
 updated: 2020-10-18
 ---
-### 피봇테이블
+
+## 피봇테이블
 
 피봇테이블(pivot table)이란 데이터 열 중에서 두개의 열을 각각 행 인덱스, 열 인덱스로 사용하여 데이터를 조회하여 펼쳐놓은 것을 말한다.
 
@@ -340,7 +341,7 @@ except ValueError as e:
     ValueError: Index contains duplicate entries, cannot reshape
     
 
-### 그룹분석
+## 그룹분석
 
 만약 키가 지정하는 조건에 맞는 데이터가 하나 이상이라서 데이터 그룹을 이루는 경우에는 그룹의 특성을 보여주는 그룹분석(group analysis)을 해야 한다.
 
@@ -349,7 +350,7 @@ except ValueError as e:
 > 1. 분석하고자 하는 시리즈나 데이터프레임에 `groupby` 매서드를 호출하여 그룹화를 한다.
 > 2. 그룹 객체에 대해 그룹연산을 수행한다.
 
-### 그룹연산 매서드
+## 그룹연산 매서드
 
 `groupby` 결과, 즉 `GroupBy` 클래스 객체의 뒤에 붙일 수 있는 그룹연산 매서드는 다양하다. 다음은 자주 사용되는 그룹연산 매서드들이다.
 
@@ -1477,7 +1478,7 @@ iris[["petal_length", "petal_length_class"]].tail(10)
 
 
 
-### `pivot_table`
+## `pivot_table`
 
 Pandas는 `pivot` 명령과 `groupby` 명령의 중간 성격을 가지는 `pivot_table` 명령도 제공한다.
 
