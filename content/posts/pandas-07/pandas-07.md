@@ -1017,7 +1017,7 @@ iris.groupby(iris.species).agg(peak_to_peak_ratio)
 
 
 
-`describe` 매서드를 사용하면 다양한 기술 통계(descriptive statistics)값을 한 번에 구한다. 그룹별로 하나으 ㅣ스칼라 값이 아니라 하나의 데이터프레임이 생성된다는 점에 주의하자.
+`describe` 매서드를 사용하면 다양한 기술 통계(descriptive statistics)값을 한 번에 구한다. 그룹별로 하나의 스칼라 값이 아니라 하나의 데이터프레임이 생성된다는 점에 주의하자.
 
 
 ```python
