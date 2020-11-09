@@ -8,13 +8,13 @@ created: 2020-11-01
 updated: 2020-11-01
 ---
 
-### `DatetimeIndex` 인덱스
+### DatetimeIndex 인덱스
 
 시계열 자료는 인덱스가 날짜 혹은 시간인 데이터를 말한다. Pandas에서 시계열 자료를 생성하려면 인덱스를 `DatetimeIndex` 자료형으로 만들어야 한다. `DatetimeIndex`는 특정한 순간에 기록된 타임스탬프(timestamp) 형식의 시계열 자료를 다루기 위한 인덱스이다. 타임스탬프 인덱스의 라벨값이 반드시 일정한 간격일 필요는 없다.
 
 `DatetimeIndex` 인덱스는 다음과 같은 보조 함수를 사용하여 생성한다.
-- `pd.to_datetime` 함수
-- `pd.date_range` 함수
+- pd.to_datetime 함수
+- pd.date_range 함수
 
 `pd.to_datetime` 함수를 쓰면 날짜/시간을 나타내는 문자열을 자동으로 datetime 자료형으로 바꾼 후 `DatetimeIndex` 자료형 인덱스를 생성한다.
 
@@ -185,7 +185,7 @@ pd.date_range("2018-1-1", "2018-12-31", freq="W-MON") # 월요일
 
 
 
-### `shift` 연산
+### shift 연산
 
 시계열 데이터의 인덱스는 시간이나 날짜를 나타내기 때문에 날짜 이동 등의 다양한 연산이 가능하다. 예를 들어 `shift`연산을 사용하면 인덱스는 그대로 두고 데이터만 이동할 수도 있다.
 
@@ -271,7 +271,7 @@ ts.shift(1, freq="W")
 
 
 
-### `resample` 연산
+### resample 연산
 
 **resample** 연산을 쓰면 시간 간격을 재조정하는 리샘플링(resampling)이 가능하다. 이 때 시간 구간이 작아지면 데이터 양이 증가한다고 해서 업-샘플링(up-sampling)이라 하고 시간 구간이 커지면 데이터 양이 감소한다고 해서 다운-샘플링(down-sampling)이라 부른다.
 
@@ -586,7 +586,7 @@ ts.resample('30s').ffill().head(20)
 
 
 
-### `dt` 접근자
+### dt 접근자
 
 datetime 자료형 시리즈에는 dt접근자가 있어 datetime 자료형이 가진 몇가지 유용한 속성과 매서드를 사용할 수 있다.
 
