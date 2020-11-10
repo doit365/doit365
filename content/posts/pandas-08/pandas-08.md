@@ -4,8 +4,8 @@ path: "/pandas-08"
 tags: ["Python"]
 featuredImage: "./cover.png"
 excerpt: 시계열 자료는 인덱스가 날짜 혹은 시간인 데이터를 말한다. Pandas에서 시계열 자료를 생성하려면 인덱스를 `DatetimeIndex` 자료형으로 만들어야 한다.
-created: 2020-11-01
-updated: 2020-11-01
+created: 2020-10-31
+updated: 2020-10-31
 ---
 
 ## DatetimeIndex 인덱스
