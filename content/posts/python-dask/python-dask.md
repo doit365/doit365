@@ -1259,5 +1259,9 @@ df.count().compute(scheduler='processes', num_workers=2)
 
 실행되는 컴퓨터의 사양에 따라 다르긴 하겠지만, 처리속도가 빨라진 것을 볼 수 있다. 
 
+좀더 자세히 알아 보고 싶다면, 공식 문서를 살펴보자.
+
+> DASK Document (https://docs.dask.org/)
+
 
 출처 : 데이터사이언스 스쿨(http://datascienceschool.net)
