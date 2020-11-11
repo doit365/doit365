@@ -16,7 +16,7 @@ const StyledNav = styled.nav`
     margin: 0;
     // padding: 0 0 0 10px;
     padding: 0 0 0 0;
-    // border-left: 2px solid #848da2;
+    border-left: 2.5px solid #dcdee4;
 
     .toc-list {
       padding-top: 10px;
@@ -37,13 +37,13 @@ const StyledNav = styled.nav`
     text-decoration: none;
     font-size: 0.9em;
     font-weight: 550; 
-    padding-left: 10px;
+    padding-left: 8px;
   }
 
   .is-active-link {
-    margin-left: -1px;
-    padding-left: 7px;
-    border-left: 4px solid #13acee; 
+    margin-left: -2.5px;
+    padding-left: 8px;
+    border-left: 2.5px solid #13acee; 
     color: #099bcc;
     // font-weight: 800;
     // border: 1px solid #bcbcbc; 
