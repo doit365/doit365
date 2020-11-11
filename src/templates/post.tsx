@@ -29,10 +29,11 @@ const PostContainer = styled(Container)`
 `;
 
 const LeftSidebar = styled.div<{ show?: boolean }>`
-  min-width: 255px;
-  max-width: 225px;
+  min-width: 300px;
+  max-width: 300px;
   transition: opacity .5s, z-index .5s;
   font-size: 0.9em;
+  margin-left: 20px;
 
   @media (max-width: ${Theme.breakpoints.xl}) {
     position: fixed;
@@ -40,7 +41,7 @@ const LeftSidebar = styled.div<{ show?: boolean }>`
     z-index: ${props => props.show ? 1000 : -1};
     background-color: #fff;
     width: 100% !important;
-    max-width: 100%;
+    // max-width: 100%;
     padding: 0 20px;
     margin-top: -5px;
     height: calc(100vh - 70px);
@@ -254,22 +255,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({data, location}) =>
       />
       <ReadingProgress target={readingProgressRef} color={primaryTag ? primaryTag.color : undefined}/>
       <PostContainer>
-        {post.headings.find(h => h.depth > 1) &&
-        <>
-            <LeftSidebar show={showToc}>
-                <TocWrapper>
-                    <Toc onClick={toggleToc}/>
-                </TocWrapper>
-            </LeftSidebar>
-            <ToggleTocButton
-                role={`button`}
-                aria-label={`Toggle table of contents`}
-                onClick={toggleToc}
-            >
-              {showToc ? <FaTimes/> : <FaAlignJustify/>}
-            </ToggleTocButton>
-        </>
-        }
+        
         <PostContent>
           <article className={`post`} ref={readingProgressRef}>
             <PostHeader>
@@ -308,6 +294,23 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({data, location}) =>
             </PostFooter>
           </article>
         </PostContent>
+      
+      {post.headings.find(h => h.depth > 1) &&
+        <>
+            <LeftSidebar show={showToc}>
+                <TocWrapper>
+                    <Toc onClick={toggleToc}/>
+                </TocWrapper>
+            </LeftSidebar>
+            <ToggleTocButton
+                role={`button`}
+                aria-label={`Toggle table of contents`}
+                onClick={toggleToc}
+            >
+              {showToc ? <FaTimes/> : <FaAlignJustify/>}
+            </ToggleTocButton>
+        </>
+        }
       </PostContainer>
       <PostAddition>
         <PostAdditionContent>

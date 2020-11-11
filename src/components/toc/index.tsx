@@ -16,10 +16,9 @@ const StyledNav = styled.nav`
     margin: 0;
     // padding: 0 0 0 10px;
     padding: 0 0 0 0;
-    border-left: 2px solid #848da2;
+    // border-left: 2px solid #848da2;
 
     .toc-list {
-      padding-left: 17px;
       padding-top: 10px;
     }
   }
