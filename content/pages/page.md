@@ -8,7 +8,7 @@ excerpt: about me page.
 
 **개발자로서의 시작,**
 
-- C#, .NET, Winform, WPF
+- C#, .NET, Winform, WPF, Angular
 - Billing Server, Game Operation, Statistic, Monitoring
 
 개발자로 시작하여 각종 어플리케이션을 개발
