@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${Theme.fonts.base};
     line-height: 1.9em;
+    margin: 0px;
   }
 
   * {
