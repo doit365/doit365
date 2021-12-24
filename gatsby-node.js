@@ -1,140 +1,115 @@
-const fs      = require('fs');
-const mkdirp  = require('mkdirp');
-const path    = require('path');
-const slugify = require('slugify');
-
-/**
- * Before booting up Gatsby make sure the content path directory exists.
- */
-exports.onPreBootstrap = ({ store }) => {
-  const { program } = store.getState();
-
-  const contentPath = 'content';
-  const dir         = path.join(program.directory, contentPath);
-
-  if (!fs.existsSync(dir)) {
-    mkdirp(dir);
-  }
-};
+const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require("lodash")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const postsPerPage = 6;
+  const { createPage } = actions
+
+  const postTemplate = require.resolve(`./src/templates/Post.jsx`)
+  const seriesTemplate = require.resolve(`./src/templates/Series.jsx`)
 
   const result = await graphql(`
-    query {
-      pages: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(\\/pages\\/).*.(md)/" } }
+    {
+      postsRemark: allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: ASC }
+        limit: 1000
       ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              path
-            }
-            html
+        nodes {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            series
           }
         }
       }
-      posts: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(posts)/.*\\\\.md$/" } }
-        sort: { fields: frontmatter___created, order: DESC }
-      ) {
-        edges {
-          node {
-            id
-            headings {
-              depth
-            }
-            frontmatter {
-              title
-              path
-              tags
-              excerpt
-              created
-              createdPretty: created(formatString: "DD MMMM, YYYY")
-              updated
-              updatedPretty: created(formatString: "DD MMMM, YYYY")
-              featuredImage {
-                childImageSharp {
-                  sizes(maxWidth: 500, quality: 70) {
-                    base64
-                    aspectRatio
-                    src
-                    srcSet
-                    sizes
-                  }
-                }
-              }
-            }
-            html
-          }
-        }
-      }
-      tags: allTags {
-        edges {
-          node {
-            name
-          }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
         }
       }
     }
-  `);
+  `)
 
   if (result.errors) {
-    reporter.panic(result.errors);
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
+    return
   }
 
-  const tags          = [];
-  const posts         = result.data.posts.edges.map(node => node.node);
-  const pages         = result.data.pages.edges.map(node => node.node);
-  const availableTags = result.data.tags.edges.map(node => node.node).map(t => t.name) || [];
+  const posts = result.data.postsRemark.nodes
+  const series = _.reduce(
+    posts,
+    (acc, cur) => {
+      const seriesName = cur.frontmatter.series
+      if (seriesName && !_.includes(acc, seriesName))
+        return [...acc, seriesName]
+      return acc
+    },
+    []
+  )
 
-  // Create a route for every single post (located in `content/posts`)
-  posts.forEach(post => {
-    if (post.frontmatter.tags) {
-      tags.push(...post.frontmatter.tags);
-    }
-    const primaryTag = post.frontmatter.tags.length > 0 ? post.frontmatter.tags[0] : null;
-    actions.createPage({
-      path: post.frontmatter.path,
-      component: require.resolve(`./src/templates/post.tsx`),
-      context: {
-        postId: post.id,
-        primaryTag: primaryTag
-      }
-    });
-  });
+  if (posts.length > 0) {
+    posts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : posts[index - 1].id
+      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
-  // Create a route for every single page (located in `content/pages`)
-  pages.forEach(page => {
-    actions.createPage({
-      path: page.frontmatter.path,
-      component: require.resolve(`./src/templates/page.tsx`),
-      context: {
-        page
-      }
-    });
-  });
+      createPage({
+        path: post.fields.slug,
+        component: postTemplate,
+        context: {
+          id: post.id,
+          series: post.frontmatter.series,
+          previousPostId,
+          nextPostId,
+        },
+      })
+    })
+  }
 
-  // Create a route for every single route (from `content/tags.yml` and the tags found in posts)
-  [...new Set(tags)].concat(availableTags).forEach(tag => {
-    const slugified = slugify(tag, { lower: true });
-    actions.createPage({
-      path: `/tag/${slugified}`,
-      component: require.resolve(`./src/templates/tag.tsx`),
-      context: {
-        tag
-      }
-    });
-  });
+  if (series.length > 0) {
+    series.forEach(singleSeries => {
+      const path = `/series/${_.replace(singleSeries, /\s/g, "-")}`
+      createPage({
+        path,
+        component: seriesTemplate,
+        context: {
+          series: singleSeries,
+        },
+      })
+    })
+  }
+}
 
-  // The index page
-  actions.createPage({
-    path: "/",
-    component: require.resolve(`./src/templates/posts.tsx`),
-    context: {
-      posts,
-      postsPerPage
-    }
-  });
-};
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode })
+    const newSlug = `/${slug.split("/").reverse()[1]}/`
+
+    createNodeField({
+      node,
+      name: `slug`,
+      value: newSlug,
+    })
+  }
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+  type MarkdownRemark implements Node {
+    frontmatter: Frontmatter!
+  }
+  type Frontmatter {
+    title: String!
+    description: String
+    tags: [String!]!
+    series: String
+  }
+  `
+  createTypes(typeDefs)
+}

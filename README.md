@@ -1,120 +1,160 @@
-# Nehalem Gatsby Theme
+<h1 align="center">
+    gatsby-starter-hoodie
+</h1>
 
-![Travis (.org)](https://img.shields.io/travis/nehalist/gatsby-theme-nehalem)
+<h4 align="center">
+  A gatsby starter developed for developers to write tech blogs.
+</h4>
 
-<p align="center">
-    <img src="https://github.com/nehalist/gatsby-theme-nehalem/blob/master/theme/logo.png?raw=true">
-</p>
+![](mockup.png)
 
-> Check the [Demo](https://nehalem.netlify.com)!
+## 🚀 About gatsby-starter-hoodie
 
-**Nehalem** is a Gatsby theme for blogging.
+[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
+
+gatsby-starter-hoodie is a gatsby starter created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
+
+Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
+
+This project inspired by [velog](https://velog.io).
+
+## [Live Demo](https://devHudi.github.io/gatsby-starter-hoodie)
 
 ## Features
 
-Out-of-the-box:
+- Markdown
+- Code Highlighting
+- Katex Syntax
+- Dark Mode (Responsive to the settings of the OS)
+- Tag Categoriazation
+- Series Categorization
+- Responsive Web
+- SEO
+- Utterance (Comment widget)
 
-- Fully responsive
-- Highly optimized (Lighthouse score ~400)
-- SEO optimized (with open graph, Twitter Card, JSON-LD, RSS and sitemap)
-- Syntax highlighting
-- Search functionality
-- Multi navigations
-- Static pages
-- Fully typed with TypeScript
-- Tagging
-- Theming
-- Customizable
+Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉.
 
-See [here](https://nehalem.netlify.com/features) for details!
+## 1. Create a Gatsby site
 
-## Installation
-
-> See [this repo](https://github.com/nehalist/gatsby-starter-nehalem) for a quick start!
-
-> A more detailed guide on installation can be found [here](https://nehalem.netlify.com/getting-started)!
-
-To use this theme in your Gatsby sites, follow these instructions:
-
-1.  Install the theme
-    ```sh
-    npm install --save @nehalist/gatsby-theme-nehalem
-    # or
-    yarn add @nehalist/gatsby-theme-nehalem
-    ```
-
-2.  Add the theme to your `gatsby-config.js`:
-    ```js
-    module.exports = {
-      plugins: [{
-        resolve: `@nehalist/gatsby-theme-nehalem`,
-        options: { // optional theme options
-        // location to our content
-        contentPath: `content`,
-        // the page manifest
-        manifest: {
-          name: `nehalem - A Gatsby theme`,
-          short_name: `nehalem`,
-          start_url: `/`,
-          background_color: `#a4cbb8`,
-          theme_color: `#a4cbb8`,
-          display: `minimal-ui`,
-          icon: `${__dirname}/assets/nehalist-gatsby.png`
-        },
-        // if archive pages should be generated automatically
-        loadDefaultPages: true,
-        // posts shown on the front page
-        postsPerPage: 5
-        }
-      }]
-    }
-    ```
-    
-Before starting your site make sure that the following requirements are fulfilled:
-
-1. Be sure to have a `content` directory within your Gatsby installation
-2. Be sure to have a `tags.yml` file within the `content` directory with _at least_ one tag, e.g.
-   
-    ```yaml
-    - name: Uncategorized
-      color: #000
-      icon: null
-      featured: false
-    ```
-      
-3. Be sure for your markdown files to include proper frontmatter content, e.g.:
-   
-```markdown
-
----
-title: "Post title"
-path: "/path-to-your-post"
-tags: ["Theme"]
-featuredImage: "./cover.jpg"
-excerpt: Descriptive description.
-created: 2019-07-29
-updated: 2019-07-29
----
+> Make sure you have **node.js** and **gatsby-cli** installed on your computer.
 
 ```
-
-Finally you can start your site with
-
-```sh
-gatsby develop
+$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie
 ```
 
-## Documentation
+## 2. Start dev server
 
-The entire documentation can be found on the [Demo](https://nehalem.netlify.com). Alternatively check 
-the [GitHub repository](https://github.com/nehalist/gatsby-theme-nehalem/tree/master/demo/content/posts).
+```
+$ cd my-hoodie-blog
+$ npm run start
+```
 
-## Like the theme?
+Now you can access to your blog at localhost:8000.
 
-Happy to hear that! Feel free to star it on [GitHub](https://github.com/nehalist/gatsby-theme-nehalem)!
+## 3. Create your own Github repository
 
-## Author
+Utterance comment widget is based on **Github issue system**. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.
 
-Developed by [nehalist.io](https://nehalist.io).
+If you don't know how to create a GitHub repository, follow the [official GitHub documentation](https://docs.github.com/en/github/getting-started-with-github/create-a-repo).
 
-*Big thanks to my SO for the awesome logo!*
+### Add remote repository
+
+```
+git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}
+```
+
+## 4. Write blog-config.js
+
+```javascript
+module.exports = {
+  title: "MY BLOG",
+  description: "Hello, This is my blog",
+  author: "YOUR NAME",
+  siteUrl: "https://myblog.com",
+  links: {
+    github: "https://github.com",
+    facebook: "https://www.facebook.com",
+    instagram: "https://www.instagram.com",
+    etc: "https://www.google.com/",
+  },
+  utterances: {
+    repo: "{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}",
+    type: "pathname",
+  },
+}
+```
+
+gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance.
+
+Configure `blog-config.js` to suit your blog. However, it is recommended not to modify `utterances.type`.
+
+## 5. Add your content
+
+Markdown content is in `contents/posts`. You can write and add your articles. [Click here](https://devHudi.github.io/gatsby-starter-hoodie/writing-guide) to see the detail writing guide.
+
+## 6. Deploy your blog
+
+### 6-1 via Netlify
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/alxshelepenok/gatsby-starter-lumen" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
+Follow the Connecting to Netlify steps in [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/). It's not difficult.
+
+If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.
+
+### 6-2. via Github Pages
+
+#### Case 1
+
+If the repository name is in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
+
+```
+$ npm run deploy-gh
+```
+
+#### Case 2
+
+If the repository name is not in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
+
+```
+$ npm run deploy-gh-prefix-paths
+```
+
+In the above case, you need to change `pathPrefix` in `gatsby-config.js` to your repository name.
+
+### 6-3. other platforms
+
+```
+$ npm run build
+```
+
+You can build the gatsby website with the command above. The build output is created in the `/public` directory. Deploy the `/public` directory using the command for the platform you want to deploy.
+
+## 7. Cutomize
+
+### Project Structure
+
+You can customize your own gatsby-starter-hoodie by referring to the following file structure 🙊.
+
+```
+├── node_modules
+├── contents
+│   └── posts // your articles are here
+├── public // build outputs are here
+└── src
+    ├── assets
+    │   └── theme // theme config is here
+    ├── components
+    │   └── Article
+    │       └── Body
+    │           └── StyledMarkdown
+    │               └── index.jsx // markdown styles are here
+    │   ...
+    ├── fonts // webfonts are here
+    ├── hooks
+    ├── images
+    ├── pages // page components are here
+    ├── reducers
+    ├── templates // post components are here
+    └── utils
+```
