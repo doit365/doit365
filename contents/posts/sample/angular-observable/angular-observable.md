@@ -1,11 +1,11 @@
 ---
 title: "Angular Observable"
-path: "/angular-observable"
-tags: ["Web", "Angular"]
-featuredImage: "./observable.png"
-excerpt: 옵저버블은 ES7 릴리스에 포함될 비동기 데이터를 관리하기위한 새로운 표준이다. Angular는 이벤트 시스템과 HTTP 서비스에서 옵저버블을 광범위하게 사용한다.
-created: 2019-02-17
-updated: 2019-02-17
+description:
+date: 2019-02-17
+update: 2019-02-17
+tags:
+  - web
+  - angular
 ---
 
 옵저버블은 ES7 릴리스에 포함될 비동기 데이터를 관리하기위한 새로운 표준이다. Angular는 이벤트 시스템과 HTTP 서비스에서 옵저버블을 광범위하게 사용한다.
