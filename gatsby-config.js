@@ -2,7 +2,7 @@ const blogConfig = require("./blog-config")
 const { title, description, author, siteUrl } = blogConfig
 
 module.exports = {
-  pathPrefix: "/winuss.github.io",
+  pathPrefix: "/blog",
   siteMetadata: {
     title,
     description,
