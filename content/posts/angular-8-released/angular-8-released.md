@@ -23,7 +23,7 @@ ng update @angular/cli @angular/core
 
 차등 로딩(Differential loading)은 브라우저가 자신의 능력에 따라 최신 자바스크립트와 원시 자바스크립트를 선택하는 과정을 말한다. 기본값으로 Angular 8은 최신 빌드(es2015)와 원시 빌드(es5)를 각각 수행하고 사용자가 어플리케이션을 로드했을 때, 사용자의 브라우저는 자동으로 필요한 번들을 선택할 것이다. 
 
-ng update 명령어를 쓰면 Angular는 차등 로딩을 위해 프로젝트의 tsconfig.json를 업데이트 한다. Angular CLI는 차등 로딩의 수행 여부를 결정하기 위해 tsconfig.json 파일의 target 프로퍼티에 명시된 자바스크립트의 버젼을 확인한다.
+ng update 명령어를 쓰면 Angular는 차등 로딩을 위해 프로젝트의 tsconfig.json를 업데이트 한다. Angular CLI는 차등 로딩의 수행 여부를 결정하기 위해 tsconfig.json 파일의 target 프로퍼티에 명시된 자바스크립트의 버젼을 확인한다. 
 
 ~~~json
 {
