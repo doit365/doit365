@@ -1,6 +1,6 @@
 module.exports = {
-  title: "devtimes",
-  description: "Hello :) Development Note!",
+  title: "Devtimes",
+  description: "Hello :) Developer notes!",
   author: "winuss",
   siteUrl: "https://devtimes.com",
   links: {
