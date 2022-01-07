@@ -1,8 +1,8 @@
 ---
 title: "Angular Google Analytics Traking"
 description:
-date: 2022-01-03
-update: 2022-01-03
+date: 2022-01-02
+update: 2022-01-02
 tags:
   - web
   - angular
