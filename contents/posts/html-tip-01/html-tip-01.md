@@ -8,8 +8,8 @@ tags:
   - html
 ---
 
-웹을 개발하다보면 HTML 익숙한 태그들만 사용하게 되고 그외 기능적인 부분들은 javascript나 css로 구현을 하게 되는데 (div, span anchor, header, list.. 등) 아주 유용하면서 개발자들이 잘 모르는 태그들을 한번 살펴보도록 하겠습니다. 
-CSS ,JS로만 가능하다고 생각한 것을 이제 HTML로 심플하게 개발해보세요.
+웹을 개발하다보면 익숙한 HTML 태그들만 사용하게 되고 그외 기능적인 부분들은 javascript나 css로 구현을 하게 되는데 (div, span anchor, header, list.. 등) 아주 유용하면서 개발자들이 잘 모르는 태그들을 한번 살펴보도록 하겠습니다. 
+CSS ,JS로만 가능하다고 생각한 것을 이제 HTML로 심플하게 개발해 보세요.
 
 ## progress, meter
 
