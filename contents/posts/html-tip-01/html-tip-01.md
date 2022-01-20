@@ -87,7 +87,7 @@ input의 list와 datalist의 id는 동일해야됨
 
 ![datalist](datalist.mov.gif) 
 
-### 마치며
+## 마치며
 유용하고 간단하게 사용할 수 있는 HTML태그 이니 꼭 기억해서 활요하면 좋을 것 같습니다.
 
 (출처 : https://www.youtube.com/watch?v=EMOlLLTAZMs)
