@@ -4,10 +4,10 @@ description:
 date: 2018-06-17
 update: 2018-06-17
 tags:
-  - Web
-  - Typescript
-  - Javascript
-  - ES6
+  - web
+  - typescript
+  - javascript
+  - es6
 series: "ES6"
 ---
 
