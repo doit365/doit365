@@ -2,9 +2,9 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 15.6px;
+    font-size: 16px;
     color: ${props => props.theme.colors.text};
-    line-height: 1.8;
+    line-height: 1.75;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }

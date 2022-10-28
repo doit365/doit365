@@ -2,7 +2,7 @@ export const light = {
   name: "light",
   colors: {
     bodyBackground: "#ffffff",
-    text: "#212529",
+    text: "#1b1b1b",
     secondaryText: "#495057",
     tertiaryText: "#868e96",
     mutedText: "#adb5bd",
