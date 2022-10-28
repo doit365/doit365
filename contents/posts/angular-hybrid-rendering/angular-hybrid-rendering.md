@@ -104,8 +104,8 @@ Node Express server listening on http://localhost:4000
 `about`
 ![about](doc2.png)
 
-`contract`
-![contract](doc3.png)
+`contact`
+![contact](doc3.png)
 
 최초 접속시 index.html 파일을 받아 그안에서 javascript 파일에 의해 동적으로 문서를 변경하는 SPA방식과는 달리 라우터 접근시 사전에 렌더링된 문서를 서버에서 전달해주게 됩니다.
 
