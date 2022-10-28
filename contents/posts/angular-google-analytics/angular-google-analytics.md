@@ -1,5 +1,5 @@
 ---
-title: "Angular Google Analytics Traking"
+title: "📗 Angular Google Analytics Traking"
 description:
 date: 2022-01-02
 update: 2022-01-02

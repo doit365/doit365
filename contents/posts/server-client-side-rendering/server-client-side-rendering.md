@@ -1,5 +1,5 @@
 ---
-title: "Server/Client Side Rendering"
+title: "🔮 Server/Client Side Rendering"
 description:
 date: 2022-01-08
 update: 2022-01-08

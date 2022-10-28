@@ -1,5 +1,5 @@
 ---
-title: "Web Storage"
+title: "🤠 Web Storage"
 description:
 date: 2021-04-11
 update: 2021-04-11

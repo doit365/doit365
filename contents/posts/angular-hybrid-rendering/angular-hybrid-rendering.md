@@ -1,5 +1,5 @@
 ---
-title: "Angular Hybrid Rendering"
+title: "🍄 Angular Hybrid Rendering"
 description:
 date: 2022-10-27
 update: 2022-10-27
