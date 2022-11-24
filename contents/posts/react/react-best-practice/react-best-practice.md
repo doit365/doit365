@@ -21,14 +21,14 @@ React 애플리케이션을 빌드할 때 상태를 많이 사용할수록 앱 �
 상태 사용을 최소화하는 한 가지 방법은 **필요할 때만 선언**하는 것입니다. 
 예를 들어 API에서 사용자 데이터를 가져오는 경우 **개별 속성을 저장하는 대신 전체 사용자 개체를 상태에 저장**합니다.
 
-~~~
+```javascript
 //개별 속성 상태
 const [username, setusername] = useState('')
 const [password, setpassword] = useState('')
 
 //전체 사용자 개체
 const [user, setuser] = useState({})
-~~~
+```
 
 
 ## 동일한 구성요소와 관련된 파일을 하나의 폴더에 정리
@@ -40,7 +40,7 @@ Navbar 구성 요소를 생성하는 경우 Navbar 구성 요소 자체, 스타�
 
 아래와 같이 인덱스 키를 사용하면 때때로 작동하지만 인덱스를 키로 사용하면 특히 목록이 변경될 것으로 예상되는 경우 문제가 발생할 수 있습니다.
 
-~~~
+```javascript
 //인덱스 키를 사용 (X)
 const Items = () => {
  const arr = ["item1", "item2", "item3", "item4", "item5"];
@@ -52,7 +52,7 @@ const Items = () => {
    </>
  );
 };
-~~~
+```
 
 
 ## 가능한 경우 div 대신 조각을 선택하십시오.
@@ -60,11 +60,11 @@ const Items = () => {
 <div>를 사용하면 DOM 크기가 증가합니다. 특히 태그 또는 DOM 노드가 많을수록 웹사이트에 더 많은 메모리가 필요하고 브라우저가 웹사이트를 로드하는 데 더 많은 전력을 사용하기 때문에 대규모 프로젝트에서 더욱 그렇습니다. 이로 인해 페이지 속도가 느려지고 잠재적으로 사용자 경험이 저하될 수 있습니다.
 불필요한 <div> 태그를 제거하는 한 가지 예는 단일 요소를 반환할 때 태그를 사용하지 않는 것입니다.
 
-~~~
+```javascript
 const Button = () => {
  return <button>Display</button>;
 };
-~~~
+```
 
 
 ## 명명 규칙 준수
@@ -80,7 +80,7 @@ handleInput() 또는 showElement()와 같은 *React 구성 요소 내부에 선�
 ## Props에 객체 구조화 사용
 props 객체를 전달하는 대신 객체 구조화를 사용하여 props 이름을 전달하십시오. 이렇게 하면 사용할 때마다 props 객체를 참조할 필요가 없습니다.
 
-~~~
+```javascript
 //props 그대로 사용
 const Button = (props) => {
  return <button>{props.text}</button>;
@@ -90,14 +90,14 @@ const Button = (props) => {
 const Button = ({text}) => {
  return <button>{text}</button>;
 };
-~~~
+```
 
 
 ## 맵을 사용하여 동적으로 배열 렌더링
 
 map()을 사용하여 반복되는 HTML 블록을 동적으로 렌더링합니다. 예를 들어 map()을 사용하여 <li> 태그의 항목 목록을 렌더링할 수 있습니다.
 
-~~~
+```javascript
 const Items = () => {
    const arr = ["item1", "item2", "item3", "item4", "item5"];
    return (
@@ -108,12 +108,15 @@ const Items = () => {
      </>
    );
   };
-~~~
+```
 
 
 ## 각 React 구성 요소에 대한 테스트 작성
+
 생성한 구성 요소에 대한 테스트를 작성하면 오류 가능성이 줄어듭니다. 테스트를 통해 구성 요소가 예상대로 작동하는지 확인합니다. React의 가장 일반적인 테스트 프레임워크 중 하나는 Jest이며 테스트를 실행할 수 있는 환경을 제공합니다.
 
+<br/>
 
 *React Is a Powerful Tool, But You Must Follow Certain Practices*
+
 React는 사용 방법 측면에서 다소 유연하지만 특정 사례를 따르면 경험을 최대한 활용하는 데 도움이 됩니다.
