@@ -6,6 +6,7 @@ update: 2019-01-18
 tags:
   - kafka
   - elk
+series: "Kafka"
 ---
 
 대용량 게임로그 수집을 위해 Elastic Stack을 도입하게 되었는데, 중간에 버퍼역할(메시지큐)을 하는 Kafka에 대서 알아보려고 한다.

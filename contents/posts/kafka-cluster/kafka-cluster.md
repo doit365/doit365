@@ -4,7 +4,9 @@ description:
 date: 2019-02-14
 update: 2019-02-14
 tags:
-  - python
+  - kafka
+  - elk
+series: "Kafka"
 ---
 Kafka를 설치하고 간단하게 클러스터 환경을 구성하여 Producer 및 Consumer 테스트를 해보자.
 
