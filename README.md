@@ -1,13 +1,3 @@
-## Install
-
-```
-$ npm install -g gatsby-cli
-```
-
-```
-$ npm run develop
-```
-
 ## Project Structure
 
 file structure 🙊.
