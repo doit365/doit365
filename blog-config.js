@@ -10,7 +10,7 @@ module.exports = {
     // facebook: "https://www.facebook.com/",
     // instagram: "https://www.instagram.com/",
     email: "mailto:niceyss@gmail.com",
-    etc: "https://www.notion.so/"
+    etc: "https://www.notion.so/",
   },
   utterances: {
     repo: "winuss/winuss.github.io",
