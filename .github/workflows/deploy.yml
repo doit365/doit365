@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '16.x'
       - name: Cache node_modules
         uses: actions/cache@v1
         with:
@@ -31,4 +31,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
-          
