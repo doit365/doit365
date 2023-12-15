@@ -31,3 +31,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
+          
