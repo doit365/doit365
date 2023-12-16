@@ -1,8 +1,6 @@
 const blogConfig = require("./blog-config")
 const { title, description, author, siteUrl } = blogConfig
 
-const google_analytics_trackingId = "UA-168375315-1"
-
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
@@ -12,13 +10,14 @@ module.exports = {
     siteUrl,
   },
   plugins: [
-    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: google_analytics_trackingId, // 측정 ID
-        head: false, // head에 tracking script를 넣고 싶다면 true로 변경
-        anonymize: true,
+        trackingId: process.env.GA_TRACKING_ID,
+        head: true,
+        gTagConfig: {
+          optimize_id: "GTM-M5JW97ZQ",
+        },
       },
     },
     `gatsby-plugin-catch-links`,
