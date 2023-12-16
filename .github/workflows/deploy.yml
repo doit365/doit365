@@ -1,33 +1,23 @@
-name: build gatsby
+name: deploy devtimes
+
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "**/README.md"
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
         with:
-          node-version: '18.x'
-      - name: Cache node_modules
-        uses: actions/cache@v1
+          token: ${{ secrets.ACCESS_TOKEN }}
+          submodules: true
+
+      - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          path: node_modules
-          key: ${{runner.OS}}-build-${{hashFiles('**/yarn.lock')}}
-          restore-keys: |
-            ${{ runner.OS }}-build-${{ runner.OS }}-
-      - name: Install dependencies
-        run: yarn install --prod --pure-lockfile
-      - name: Build
-        run: yarn build --prefix-paths
-        env:
-          NODE_ENV: production
-      - uses: peaceiris/actions-gh-pages@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages
+          skip-publish: false
