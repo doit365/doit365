@@ -12,6 +12,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
