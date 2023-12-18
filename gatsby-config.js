@@ -11,13 +11,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingId: process.env.GA_TRACKING_ID,
-        head: true,
-        gTagConfig: {
-          optimize_id: "GTM-M5JW97ZQ",
-        },
+        id: "GTM-M5JW97ZQ", // 컨테이너 ID
+        includeInDevelopment: true, // 개발 서버로 Google Tag Assistant 사용하려면 true로 설정.
       },
     },
     `gatsby-plugin-catch-links`,
