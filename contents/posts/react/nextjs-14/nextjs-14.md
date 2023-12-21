@@ -219,4 +219,4 @@ Next.js 14에서는 blocking 및 non-blocking 메타데이터를 분리했습니
 
 ## 마치며
 
-turobopack과 pre-rendering 은 기대가 되는 부분이긴 하지만, ServerActions은 심플해 보이긴 하지만 구조적이러 이렇게 쓰는게 맞나 싶은 느낌이 들기도 하네요. 아무튼 프론트엔드의 변화 속도는 정말 빠른것 같다는 생각입니다.
+turobopack과 pre-rendering 은 기대가 되는 부분이긴 하지만, ServerActions은 심플해 보이긴 하지만 이렇게 쓰면 코드가 지저분해 질것 같은데 이게 맞나 싶은 느낌이 들기도 하네요. 아무튼 프론트엔드의 변화 속도는 정말 빠른것 같다는 생각입니다.
