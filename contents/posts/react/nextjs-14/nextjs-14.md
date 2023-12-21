@@ -48,36 +48,36 @@ Next.js 9부터 프런트엔드 코드와 함께 백엔드 엔드포인트를 �
 
 예를 들어 api/ 디렉터리에 새 파일을 생성합니다:
 
-```
-import type { NextApiRequest, NextApiResponse } from 'next';
+```typescript
+import type { NextApiRequest, NextApiResponse } from "next"
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse
 ) {
-  const data = req.body;
-  const id = await createItem(data);
-  res.status(200).json({ id });
+  const data = req.body
+  const id = await createItem(data)
+  res.status(200).json({ id })
 }
 ```
 
 그런 다음 클라이언트 측에서 React 및 onSubmit과 같은 이벤트 핸들러를 사용하여 API 경로를 fetch할 수 있습니다.
 
-```
-import { FormEvent } from 'react';
+```typescript
+import { FormEvent } from "react"
 
 export default function Page() {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+    event.preventDefault()
 
-    const formData = new FormData(event.currentTarget);
-    const response = await fetch('/api/submit', {
-      method: 'POST',
+    const formData = new FormData(event.currentTarget)
+    const response = await fetch("/api/submit", {
+      method: "POST",
       body: formData,
-    });
+    })
 
     // Handle response if necessary
-    const data = await response.json();
+    const data = await response.json()
     // ...
   }
 
@@ -86,7 +86,7 @@ export default function Page() {
       <input type="text" name="name" />
       <button type="submit">Submit</button>
     </form>
-  );
+  )
 }
 ```
 
@@ -100,11 +100,11 @@ API 경로를 수동으로 생성할 필요가 없다면 어떻게 될까요? �
 
 Pages Router의 이전 예는 하나의 파일로 단순화될 수 있습니다:
 
-```
+```typescript
 export default function Page() {
   async function create(formData: FormData) {
-    'use server';
-    const id = await createItem(formData);
+    "use server"
+    const id = await createItem(formData)
   }
 
   return (
@@ -112,7 +112,7 @@ export default function Page() {
       <input type="text" name="name" />
       <button type="submit">Submit</button>
     </form>
-  );
+  )
 }
 ```
 
@@ -146,7 +146,7 @@ pre-rendering은 서버측 렌더링(SSR), 정적 사이트 생성(SSG) 및 증�
 
 부분 사전 렌더링은 Suspense 경계에 따라 정의됩니다.
 
-```
+```typescript
 export default function Page() {
   return (
     <main>
@@ -162,7 +162,7 @@ export default function Page() {
       </Suspense>
       <NewProducts />
     </main>
-  );
+  )
 }
 ```
 
@@ -172,7 +172,7 @@ pre-rendering이 활성화되면 이 페이지는 `<Suspense />` boundary를 기
 
 요청이 이루어지면 정적 HTML 셸이 즉시 제공됩니다.
 
-```
+```html
 <main>
   <header>
     <h1>My Store</h1>
@@ -190,7 +190,7 @@ pre-rendering이 활성화되면 이 페이지는 `<Suspense />` boundary를 기
 
 `<ShoppingCart />`는 쿠키에서 읽어 사용자 session을 확인하므로 이 컴포넌트는 정적 셸과 동일한 HTTP 요청의 일부로 스트리밍됩니다. 추가 네트워크 왕복이 필요하지 않습니다.
 
-```
+```typescript
 import { cookies } from 'next/headers'
 
 export default function ShoppingCart() {
