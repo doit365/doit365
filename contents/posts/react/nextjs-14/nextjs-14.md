@@ -1,8 +1,8 @@
 ---
 title: "🤜 Next.js 14 Conf"
 description:
-date: 2022-11-24
-update: 2022-11-24
+date: 2023-12-21
+update: 2023-12-21
 tags:
   - web
   - react
