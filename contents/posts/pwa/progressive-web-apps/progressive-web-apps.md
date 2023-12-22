@@ -9,6 +9,8 @@ tags:
 series: "웹 푸시 적용하기"
 ---
 
+![](pwa-1.png) (이미지 출처 : https://www.mitrais.com/news-updates/pwa-the-advantages-and-basic-guide-to-apply/)
+
 ios 16.4 버전이 업데이트되면서 ios에서도 웹 푸시 알림을 받아볼 수 있게 되었습니다. 웹 푸시 알람을 제공하기 위해 먼저 PWA에 대해 알아보겠습니다.
 
 ## PWA
