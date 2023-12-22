@@ -221,7 +221,9 @@ export async function POST(request: NextRequest) {
 ```
 
 프로젝트를 실행하면 아래와 같은 테스트 화면을 볼수 있습니다. 아이폰의 경우 먼저 앱설치가 진행이 되어야 하기 대문에 그림과 같은 안내가 필요할 것 같습니다.
-![](push-1.png)
+
+<!-- ![](push-1.png) -->
+<img src="push-1.png" width="200" />
 
 ## 마치며
 
