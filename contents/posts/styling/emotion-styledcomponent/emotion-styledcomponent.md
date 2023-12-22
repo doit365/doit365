@@ -1,6 +1,6 @@
 ---
 title: "Emotion 🤔 Styled-Component"
-description: 이모션과 스타일드 컴포넌트
+description:
 date: 2023-12-22
 update: 2023-12-22
 tags:
@@ -208,7 +208,7 @@ const FgButton = styled(Button)`
 export { Container, Title, BgButton, FgButton }
 ```
 
-{% stackblitz https://stackblitz.com/edit/stackblitz-starters-eosa5k?embed=1 %}
+https://stackblitz.com/edit/stackblitz-starters-eosa5k?embed=1
 
 ### 마치며
 
