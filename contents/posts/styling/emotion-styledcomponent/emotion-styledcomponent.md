@@ -217,4 +217,4 @@ https://stackblitz.com/edit/stackblitz-starters-eosa5k?embed=1
 **참고**
 
 - Emotion 공식문서 (https://emotion.sh/docs/introduction)
-- Styled cOmponent 공식 문서 (https://styled-components.com/docs)
+- Styled Component 공식 문서 (https://styled-components.com/docs)
