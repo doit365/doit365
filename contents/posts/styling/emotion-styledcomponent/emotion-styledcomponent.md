@@ -213,3 +213,8 @@ export { Container, Title, BgButton, FgButton }
 ### 마치며
 
 개인적으로 Emotion의 css() 함수가 좀 더 사용하기가 편한 것 같습니다. MUI(Material UI)가 스타일링 엔진을 Styled Components 대신에 Emotion을 채택하면서 Emotion 쪽으로 살짝 힘이 실리는것 같기도 하지만, 프로젝트의 성격 및 구성원의 성향에 따라 선택적으로 사용하면 될 것 같습니다.
+
+**참고**
+
+- Emotion 공식문서 (https://emotion.sh/docs/introduction)
+- Styled cOmponent 공식 문서 (https://styled-components.com/docs)
