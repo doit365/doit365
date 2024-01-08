@@ -84,6 +84,12 @@ module.exports = {
         gfm: true,
         plugins: [
           {
+            resolve: `gatsby-plugin-google-adsense`,
+            options: {
+              publisherId: `ca-pub-1154659137489563`,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 680,
