@@ -90,6 +90,14 @@ module.exports = {
             },
           },
           {
+            resolve: "gatsby-plugin-robots-txt",
+            options: {
+              host: "https://devtimes.com",
+              sitemap: "https://devtimes.com/sitemap.xml",
+              policy: [{ userAgent: "*", allow: "/" }],
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 680,
