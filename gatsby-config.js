@@ -92,8 +92,8 @@ module.exports = {
           {
             resolve: "gatsby-plugin-robots-txt",
             options: {
-              host: "https://devtimes.com",
-              sitemap: "https://devtimes.com/sitemap.xml",
+              host: "https://doit365.github.io",
+              sitemap: "https://doit365.github.io/sitemap.xml",
               policy: [{ userAgent: "*", allow: "/" }],
             },
           },

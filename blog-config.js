@@ -1,19 +1,19 @@
 module.exports = {
-  title: "Devtimes",
-  description: "Hello :) Developer notes!",
+  title: "DOIT.365",
+  description: "Hello :)",
   author: "winuss",
-  siteUrl: "https://devtimes.com",
+  siteUrl: "https://doit365.github.io",
   links: {
-    github: "https://github.com/winuss",
-    kaggle: "https://kaggle.com",
-    linkedIn: "https://linkedin.com",
+    // github: "https://github.com",
+    // kaggle: "https://kaggle.com",
+    // linkedIn: "https://linkedin.com",
     // facebook: "https://www.facebook.com/",
     // instagram: "https://www.instagram.com/",
-    email: "mailto:niceyss@gmail.com",
-    etc: "https://www.notion.so/",
+    email: "mailto:niceyss@naver.com",
+    // etc: "https://www.notion.so/",
   },
   utterances: {
-    repo: "winuss/winuss.github.io",
+    repo: "doit365/doit365.github.io",
     type: "pathname",
   },
 }
